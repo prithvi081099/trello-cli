@@ -1,0 +1,6 @@
+# Python package info
+trello_cli.egg-info/
+
+# Python bytecode
+trello_cli/__pycache__/
+*.py[cod]

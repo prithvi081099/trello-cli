@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trello-cli"
+version = "0.1.0"
+description = "A CLI tool to add cards to Trello boards"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "click>=8.0.0",  # For CLI interface
+    "requests>=2.28.0",  # For HTTP requests to Trello API
+    "colorama>=0.4.6",  # For colorful terminal output
+    "pytest>=7.0.0",     # For running test cases
+]
+
+[project.scripts]
+trello-cli = "trello_cli.cli:main"
+
+[tool.setuptools]
+packages = ["trello_cli"]
